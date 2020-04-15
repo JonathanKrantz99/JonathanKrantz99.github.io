@@ -1,17 +1,19 @@
 .header
 {
-    position: relative;
-    height: 25%;
+    position: absolute;
+    height: fit-content;
+    width: 100%;
     border-bottom: 1px solid #dbdbdb;
 }
 
 .list
 {
     list-style-type: none;
-    text-align: end;
-    padding-top: 0.3em;
+    padding-top: 0em;
     padding-right: 2em;
     font-size: 1.5em;
+    width: 60%;
+    margin-left: 40%;
 }
 
 .list li
@@ -35,7 +37,8 @@
 .name
 {
     color: rgb(61, 61, 61);
+    width: 40%;
     font-family: Optima, Helvetica, sans-serif;
     font-size: 2.5em;
-    position: absolute; top: -1.1em; left: 1em;
+    position: absolute; top: 0.5em;
 }
