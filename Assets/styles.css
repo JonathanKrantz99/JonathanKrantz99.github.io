@@ -1,35 +1,44 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
 .header
 {
-    position: absolute;
-    height: fit-content;
-    width: 100vw;
+    position: relative;
     border-bottom: 1px solid #dbdbdb;
 }
 
-.list
+.menu
 {
-    list-style-type: none;
-    padding-top: 0em;
-    padding-right: 2em;
-    font-size: 1.5em;
+    position: relative;
     width: 60vw;
-    margin-left: 40%;
+    margin-left: 40vw;
+    text-align: end;
+    vertical-align: middle;
 }
 
-.list li
+.menu ul
+{
+    list-style-type: none;
+    font-size: 1.5em;
+}
+
+.menu ul li
 {
     display: inline;
     margin: 1em;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.list li a
+.menu ul li a
 {
     text-decoration: none;
     color: #bbbbbb
 }
 
-.list li:hover
+.menu ul li:hover
 {
     border-bottom: 1px solid grey;
 }
@@ -37,8 +46,9 @@
 .name
 {
     color: rgb(61, 61, 61);
-    width: 40vw;
     font-family: Optima, Helvetica, sans-serif;
+    position: absolute; bottom: 0.3em; left: 1em;
+    vertical-align: middle;
     font-size: 2.5em;
-    position: absolute; top: 0.5em;
+    width: 40vw;
 }
