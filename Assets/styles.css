@@ -2,7 +2,7 @@
 {
     position: absolute;
     height: fit-content;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid #dbdbdb;
 }
 
@@ -12,7 +12,7 @@
     padding-top: 0em;
     padding-right: 2em;
     font-size: 1.5em;
-    width: 60%;
+    width: 60vw;
     margin-left: 40%;
 }
 
@@ -37,7 +37,7 @@
 .name
 {
     color: rgb(61, 61, 61);
-    width: 40%;
+    width: 40vw;
     font-family: Optima, Helvetica, sans-serif;
     font-size: 2.5em;
     position: absolute; top: 0.5em;
