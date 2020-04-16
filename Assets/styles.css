@@ -1,97 +1,113 @@
-body
+html
 {
-    margin: 0px;
-    padding: 0px;
+    width: 100%;
+    height: 100%;
 }
 
-.header
+body
 {
-    position: relative;
-    height: 5em;
-    border-bottom: 1px solid #dbdbdb;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.frontpage
+{
+    background-color: rgb(78, 78, 78);
+    height: 100%;
+}
+
+.frontpage img
+{
+    height: 15em;
+    width: 15em;
 }
 
 .menu
 {
-    position: absolute; top: 0.6em; right: 1em;
+    text-align: center;
 }
 
 .menu ul
 {
+    margin: 0;
+    padding-top: 1em;
     list-style-type: none;
+    font-size: 1.5em;
+    color: rgb(211, 211, 211);
 }
 
 .menu ul li
 {
-    font-size: 1.5em;
     display: inline;
     margin: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu ul li:hover
+{
+    border-bottom: 1px solid rgb(211, 211, 211)
 }
 
 .menu ul li a
 {
     text-decoration: none;
-    color: #bbbbbb
+    color: rgb(211, 211, 211);
 }
 
-.menu ul li:hover
+.textcontainer
 {
-    border-bottom: 1px solid grey;
+    width: 50%;
+    height: 15em;
+    position: absolute; 
+    top: 50%;
+    right: 50%;
+    margin-top: -7.5em;
+    margin-right: 1em;
 }
 
-.name
+.imgcontainer
 {
-    position: absolute; top: 0.9em; left: 1em;
+    width: 50%;
+    height: 15em;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -7.5em;
+    margin-left: 1em;
 }
 
-.name span
+.textbox
 {
-    color: rgb(61, 61, 61);
-    font-family: Optima, Helvetica, sans-serif;
+    position: absolute; top: 0px; right: 0px;
+    width: 15em;
+    background-color: rgb(184, 184, 184);
+    line-height: 15em;
+    text-align: center;
+    border: 2px solid rgb(212, 181, 0);
+}
+
+.textbox span
+{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
     font-size: 2.5em;
+    font-family: Andale Mono, monospace;
+    color: rgb(78, 78, 78);
 }
 
-.picture-about
+.imgcontainer img
 {
-    float: left;
-    margin-top: 1em;
-    height: 30em;
-    width: 40%;
-    background-color: #f6f6f6;
+    position: absolute; top: 0px; left: 0px;
+    width: 15em;
+    height: 15em;
+    border: 2px solid gold;
+    border-radius: 15em;
 }
 
 .about
 {
-    float: left;
-    margin-top: 1em;
-    height: 30em;
-    width: 60%;
-    background-color: lightblue;
-}
-
-.about .title
-{
-    text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    text-decoration: underline;
-    font-size: 2.5em;
-    margin-top: 0.5em;
-    margin-left: 0px;
-}
-
-.about p
-{
-    margin-left: 1em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
-}
-
-.picture-about img
-{
-    height: 350px;
-    width: 350px;
-    margin-top: 4em;
-    margin-left: 6em;
-    
+    background-color: rgb(212, 114, 114);
+    height: 100%;
 }
