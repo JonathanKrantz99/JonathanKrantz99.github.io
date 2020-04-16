@@ -15,7 +15,7 @@ body
 {
     background-color: rgb(78, 78, 78);
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 
 .menu
@@ -106,5 +106,5 @@ body
 {
     background-color: rgb(212, 114, 114);
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
