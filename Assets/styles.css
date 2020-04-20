@@ -15,6 +15,7 @@ body
 {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .mainpagecontainer
@@ -104,27 +105,44 @@ body
     .textcontainer, .imgcontainer
     {
         width: 100%;
+        margin-bottom: 2em;
+        height: 13em;
     }
 
-    .textcontainer, .imgcontainer
+    .textbox, .imgbox
     {
-        margin-bottom: 2em;
+        height: 13em;
+        width: 13em;
+        line-height: 13em;
+    }
+
+    .imgbox img
+    {
+        width: 13em;
+        border-radius: 13em;
     }
 
     .mainpagecontainer
     {
-        margin-top: -19.5em;
+        margin-top: -16.5em;
     }
 
     .textbox, .imgbox
     {
         left: 50%;
-        margin-left: -7.5em;
+        margin-left: -6.5em;
     }
 
     .button
     {
         margin-top: 0em;
+        height: 3em;
+        line-height: 3em;
+    }
+
+    .button a
+    {
+        font-size: 1.5em;
     }
 }
 
