@@ -6,42 +6,109 @@
     <link rel="stylesheet" href="Assets/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascript.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
-    <div class="frontpage">
-
+    <div class="frontpage" id="startpage">
+        <!--
         <header class="menu">
             <ul>
                 <li><a href="#about">Om</a></a></li>
                 /
-                <li><a href="">Utbildning</a></li>
+                <li><a href="#education">Utbildning</a></li>
                 /
                 <li><a href="">Kompetens</a></li>
                 /
                 <li><a href="">Projekt</a></li>
             </ul>
         </header>
+    -->
 
-        <div class="textcontainer">
+        <div class="mainpagecontainer">
 
-            <div class="textbox">
-                <span>Jonathan<br><br>Krantz</span>
+            <div class="textcontainer">
+
+                <div class="textbox">
+                    <span>Jonathan<br><br>Krantz</span>
+                </div>
+    
+            </div>
+
+            <div class="imgcontainer">
+                
+                <div class="imgbox">
+                    <img src="Assets/img.png" alt="Bild på Jonathan Krantz">
+                </div>
+                
+            </div>
+
+            <div style="clear: both;"> </div>
+
+            <div class="button">
+                <a href="#about">Säg hej!</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="navigationcontainer" id="navigationcontainer">
+        <ul>
+            <li><a href="#startpage">Start</a></li>
+            <li class="aboutitem"><a href="#about">Om</a></li>
+            <li><a href="#education">Utbildning</a></li>
+            <li><a href="">Kompetens</a></li>
+            <li><a href="">Projekt</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="about" id="about">
+
+        
+        <div class="about-me">
+
+            <div class="about-me-title">
+                <span>Om mig</span>
+            </div>
+
+            <div class="about-me-textbox">
+                <p>
+                    Massa text om mig Massa text om mig Massa text om mig Massa text om mig
+                    Massa text om mig Massa text om mig Massa text om mig Massa text om mig
+                    Massa text om mig Massa text om mig Massa text om mig Massa text om mig
+                    Massa text om mig Massa text om mig Massa text om mig Massa text om mig
+                    Massa text om mig Massa text om mig Massa text om mig Massa text om mig
+                </p>
             </div>
 
         </div>
 
-        <div class="imgcontainer">
-            <img src="Assets/img.png" alt="Bild på Jonathan Krantz">
+        <div class="about-me-info">
+
         </div>
 
-
     </div>
 
-    <div class="about" id="about">
+    <div class="education"></div>
 
-    </div>
+
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navigationcontainer");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 

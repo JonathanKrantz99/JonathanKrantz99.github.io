@@ -22,3 +22,6 @@ $(document).ready(function(){
     } // End if
   })
 });
+
+// When the user scrolls the page, execute myFunction 
+
